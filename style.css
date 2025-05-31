@@ -1,0 +1,166 @@
+* {
+    scroll-behavior: smooth;
+}
+
+@keyframes color{
+    0%{
+color: rgb(233, 136, 72);
+    }
+   100%{
+    color: chartreuse;
+
+    }
+
+}
+
+.navbar {
+    color: azure;
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    position: sticky;
+    top: 0;
+    animation:color 2s;
+}
+
+.navbar li:hover {
+
+    transition: translateY(-5px);
+    transition: .3 ease;
+    color: rgb(38, 49, 49);
+}
+
+h2:hover {
+    color: beige;
+
+}
+
+.navbar ul {
+
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+
+}
+
+body {
+    background-color: bisque;
+    margin: 0;
+}
+
+form {
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(17, 12, 6);
+}
+
+h1 {
+    color: rgb(226, 207, 97);
+
+}
+span{
+    animation: h1 3s;
+}
+
+@keyframes h1{
+    0%{
+       font-size: 30px;
+    }
+    100%{
+        font-size:  60px;
+    }
+}
+
+
+button {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #03045e;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    z-index: 1;
+}
+
+button::before,
+button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transform: skew(15deg);
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: -1;
+}
+
+button::before {
+    left: -10px;
+    background: #240046;
+}
+
+button::after {
+    right: -10px;
+    background: #5a189a;
+}
+
+button:hover::before,
+button:hover::after {
+    width: 58%;
+}
+
+button:hover span {
+    color: #e0aaff;
+    transition: 0.3s;
+}
+
+button span {
+    color: #03045e;
+    font-size: 18px;
+    transition: all 0.3s ease-in;
+}
+
+.contact {
+   height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+details {
+    font-family: "Lora", serif;
+    font-size: 10px;
+
+}
+summary{
+    font-family: "Lora", serif;
+    font-size: 15px;
+}
+
+.home{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('tt.jpg');
+    background-repeat: no-repeat;
+      background-size:cover;
+      backdrop-filter: blur(10x);
+    background-position-y:  -40px;
+}
+.aboutme{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: aliceblue;
+}
+
